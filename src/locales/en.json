@@ -1,0 +1,24 @@
+{
+  "participants":{
+    "header_explain": "Name all participants, including those who did'nt financially contribute.",
+    "name": "Name",
+    "participants": "Participants",
+    "add": "Add"
+  },
+  "expenses":{
+    "header_explain": "Input all expenses. Expenses not shared with all participants should be marked as 'Side Pot' and shared participants must be selected.",
+    "payer": "Payer",
+    "amount": "Amount",
+    "sidePot": "Side pot",
+    "general_expenses": "General expenses",
+    "side_pots": "Side pots",
+    "expenses": "Expenses"
+  },
+  "break-even":{
+    "header_explain": "Expenses summary and break-even chart. who need to pay who and how much",
+    "from": "From",
+    "to": "To",
+    "msg_copied": "Summary and chart was copied as text to clipboard, paste it wherever you like.",
+    "break_even": "Break-even"
+  }
+}
