@@ -12,8 +12,9 @@
     methods:{
       // switch language.
       switch_locale: function () { 
-        console.log(process.env.VUE_APP_I18N_SUPPORTED_LOCALE);
-        this.$i18n.locale = this.locales.filter(l => l !== this.$i18n.locale.toString()); 
+          let arr_locales = process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(',');
+          console.log(process.env.VUE_APP_I18N_SUPPORTED_LOCALE);
+          this.$i18n.locale = arr_locales.filter(l => l !== this.$i18n.locale.toString()); 
       },
       // show info modal window.
       show_appInfoModal: function (){ alert('blyat') }
