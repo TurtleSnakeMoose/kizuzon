@@ -12,8 +12,8 @@
     methods:{
       // switch language.
       switch_locale: function () { 
-          console.log(this.locales)
           let arr_locales = this.locales.split(',');
+          console.log(arr_locales)
           this.$i18n.locale = arr_locales.filter(l => l !== this.$i18n.locale.toString()); 
       },
       // show info modal window.
