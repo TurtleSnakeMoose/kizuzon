@@ -22,7 +22,7 @@
     data(){
       return {
         // get locales (languages) from the .env file.
-        locales: process.env.VUE_APP_I18N_SUPPORTED_LOCALE.split(',')
+        locales: 'en,he'
       }
     }
   }
