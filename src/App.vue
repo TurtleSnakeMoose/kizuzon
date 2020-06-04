@@ -11,7 +11,10 @@
   export default {
     methods:{
       // switch language.
-      switch_locale: function () { this.$i18n.locale = this.locales.filter(l => l !== this.$i18n.locale.toString()); },
+      switch_locale: function () { 
+        console.log(process.env.VUE_APP_I18N_SUPPORTED_LOCALE);
+        this.$i18n.locale = this.locales.filter(l => l !== this.$i18n.locale.toString()); 
+      },
       // show info modal window.
       show_appInfoModal: function (){ alert('blyat') }
     },
