@@ -4,7 +4,8 @@
       <p>{{$t('expenses.header_explain')}}</p>
     </div>
     <div class="app_body">
-      {{$t('expenses.expenses').toUpperCase()}}
+      <ExpenseInput/>
+      <ExpenseCatagories/>
     </div>
     <div class="app_footer">
       <v-btn to='/'>{{$t('participants.participants')}}</v-btn>
@@ -14,8 +15,14 @@
 </template>
 
 <script>
-export default {
+import ExpenseInput from './ExpenseInput'
+import ExpenseCatagories from './ExpenseCatagories'
 
+export default {
+  components:{
+    ExpenseInput,
+    ExpenseCatagories
+  }
 }
 </script>
 
